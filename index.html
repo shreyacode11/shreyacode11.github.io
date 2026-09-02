@@ -306,7 +306,7 @@
   }
   .medflow-shots img:hover{ transform:scale(1.03); border-color:var(--amber); }
 
-  /* ---------- project slideshow (CartEye / MedFlow / Map Navigator) ---------- */
+  /* ---------- project slideshow ---------- */
   .slideshow{
     position:relative; width:100%; height:100%; overflow:hidden;
   }
@@ -349,7 +349,6 @@
   .project-card-sm .project-tag{ margin-bottom:0; }
   .project-card-sm .project-stack{ margin-bottom:0; }
 
-  /* map navigator visual gets more room + a taller frame since it's a full screenshot */
   .project-visual.map-visual{ background:#0d1013; aspect-ratio:16/10; max-height:280px; }
   .project-visual.map-visual .slide{ object-fit:contain; background:#0d1013; }
 
@@ -536,9 +535,9 @@
     <h1 class="hero-name" id="heroName">SHREYA SABOJI</h1>
     <p class="hero-role">Full-Stack Developer building <span class="accent">real-time systems</span> — from live Kanban boards to IoT-connected carts. Currently a Software Development Engineer in the making.</p>
     <div class="hero-stats">
-      <div><div class="hero-stat-num">3+</div><div class="hero-stat-label">Projects Shipped</div></div>
+      <div><div class="hero-stat-num">2+</div><div class="hero-stat-label">Projects Shipped</div></div>
       <div><div class="hero-stat-num">3</div><div class="hero-stat-label">Internships</div></div>
-      <div><div class="hero-stat-num">5</div><div class="hero-stat-label">Certifications</div></div>
+      <div><div class="hero-stat-num">7</div><div class="hero-stat-label">Certifications</div></div>
       <div><div class="hero-stat-num">2</div><div class="hero-stat-label">Hackathons</div></div>
     </div>
   </div>
@@ -562,10 +561,12 @@
         <p>I've spent the last year bouncing between an internship portal, a gaming venue's website, and a production codebase — each one teaching me a different way software actually gets used by real people, not just tested by me at 1am. Outside of code, I run media for VTU Fest and I'm the person who says yes to a 24-hour hackathon on a Friday night.</p>
         <p>What I'm chasing next: a Software Development Engineer role where I can keep learning by shipping, not just studying.</p>
         <div class="chip-row">
-          <span class="chip">React.js</span><span class="chip">Node.js</span><span class="chip">Express.js</span>
-          <span class="chip">MongoDB</span><span class="chip">Socket.IO</span><span class="chip">Firebase</span>
-          <span class="chip">Java</span><span class="chip">C++</span><span class="chip">Tailwind CSS</span>
-          <span class="chip">JWT Auth</span><span class="chip">REST APIs</span>
+          <span class="chip">Java</span><span class="chip">C++</span><span class="chip">JavaScript</span>
+          <span class="chip">Kotlin</span><span class="chip">SQL</span><span class="chip">React.js</span>
+          <span class="chip">Node.js</span><span class="chip">Spring Boot</span><span class="chip">Jetpack Compose</span>
+          <span class="chip">REST APIs</span><span class="chip">JWT Auth</span><span class="chip">OAuth</span>
+          <span class="chip">Socket.IO</span><span class="chip">MySQL</span><span class="chip">MongoDB</span>
+          <span class="chip">Firebase Realtime DB</span><span class="chip">System Design</span>
         </div>
       </div>
       <div class="reveal">
@@ -594,9 +595,9 @@
       </div>
       <div>
       <ul class="exp-bullets">
-          <li>Developing CMX InternXpert, a mobile internship-management platform serving 25+ users during internal testing.</li>
+          <li>Single-handedly developing CMX InternXpert, a mobile internship-management platform serving 25+ users during internal testing.</li>
           <li>Implemented role-based dashboards, JWT authentication, and task workflows — cutting manual task-tracking time from 15 minutes to under 3 minutes per update.</li>
-          <li>Integrated 12+ Spring Boot REST API endpoints enabling document handling and workflow automation across 4 user roles (Admin, Intern, Recruiter, Mentor).</li>
+          <li>Integrated Spring Boot REST APIs with 12+ endpoints, enabling document handling and workflow automation across 4 user roles (Admin, Intern, Recruiter, Mentor).</li>
         </ul>
       </div>
     </div>
@@ -605,12 +606,10 @@
       <div class="exp-meta">
         <div class="role">Freelance Web Developer</div>
         <div class="org">Lucid Arena, Bengaluru</div>
-        <div class="dur">January 2026</div>
+        <div class="dur">Jan — Feb 2026</div>
       </div>
       <ul class="exp-bullets">
-        <li>Independently designed and delivered a full business website for a gaming/entertainment venue, managing the complete lifecycle from requirements to deployment.</li>
-        <li>Built a live booking workflow for service exploration, availability checks, and enquiry submission.</li>
-        <li>Delivered 5+ responsive pages (services, pricing, gallery, events, contact) aligned to client requirements.</li>
+        <li>Designed and delivered a responsive business website with a live booking workflow, handling 10+ bookings within the first month of launch.</li>
       </ul>
     </div>
 
@@ -618,10 +617,11 @@
       <div class="exp-meta">
         <div class="role">Web Development Intern</div>
         <div class="org">Adysis Technologies, Bengaluru</div>
-        <div class="dur">Aug 2025 — Oct 2025</div>
+        <div class="dur">Aug — Oct 2025</div>
       </div>
       <ul class="exp-bullets">
-        <li>Built a sales/marketplace platform addressing the problem that many local artisans and handicraft makers lack an online presence, limiting their market reach and income.</li> <li>Debugged and resolved application issues to improve performance and reliability.</li> <li>Collaborated with the development team on responsive, interactive UI components.</li>
+        <li>Built 8+ responsive UI components for a sales/marketplace platform, improving page interaction speed.</li>
+        <li>Debugged and resolved 10+ application issues, reducing reported bugs during testing cycles.</li>
       </ul>
     </div>
   </div>
@@ -652,36 +652,18 @@
       <div class="project-card-sm reveal">
         <div class="project-tag">Flagship — Real-Time PM Tool</div>
         <h4>Priorit</h4>
-        <p>Full-stack Kanban tool with live sync — task moves reflect instantly across all connected users via Socket.IO, plus JWT auth and role-based access.</p>
+        <p>Full-stack collaborative project-management platform with Kanban-based task management and role-based permissions, supporting 10–15 concurrent users during testing. Real-time task sync via Socket.IO delivers updates across active users within 1–2 seconds. JWT authentication and Gmail email verification secure 10+ test user accounts.</p>
         <div class="project-stack">
-          <span class="chip">React.js</span><span class="chip">Node.js</span><span class="chip">Socket.IO</span><span class="chip">MongoDB</span><span class="chip">JWT</span>
+          <span class="chip">React.js</span><span class="chip">Node.js</span><span class="chip">Socket.IO</span><span class="chip">JWT</span><span class="chip">Gmail Verification</span>
         </div>
       </div>
 
       <div class="project-card-sm reveal">
         <div class="project-tag">IoT + Web</div>
         <h4>CartEye</h4>
-        <p>Smart shopping cart (ESP32) that detects and weighs items in real time, syncing a live price total to a connected web dashboard with QR checkout.</p>
+        <p>IoT-enabled smart shopping cart using ESP32, load cells, and ultrasonic sensors, achieving ~80% item-detection accuracy during demo testing. Web app performs real-time weight-to-product matching via Firebase, processing 15–20 test transactions during demo.</p>
         <div class="project-stack">
-          <span class="chip">ESP32</span><span class="chip">Load Cell</span><span class="chip">Firebase</span>
-        </div>
-      </div>
-
-      <div class="project-card-sm reveal">
-        <div class="project-tag">Hospital Patient-Flow System</div>
-        <h4>MedFlow</h4>
-        <p>Bilingual (EN/KN) hospital queue system across 4+ departments with priority-based patient calls and Web Speech API voice guidance for accessibility.</p>
-        <div class="project-stack">
-          <span class="chip">HTML/CSS/JS</span><span class="chip">Web Speech API</span><span class="chip">localStorage</span>
-        </div>
-      </div>
-
-      <div class="project-card-sm reveal">
-        <div class="project-tag">Java Desktop · Graph Algorithms</div>
-        <h4>Map Navigator</h4>
-        <p>Java desktop app computing shortest routes over a Karnataka road-network graph using Dijkstra's algorithm, with live distance/time output.</p>
-        <div class="project-stack">
-          <span class="chip">Java</span><span class="chip">Dijkstra's Algorithm</span><span class="chip">Graph Theory</span>
+          <span class="chip">ESP32</span><span class="chip">Load Cell</span><span class="chip">Ultrasonic Sensor</span><span class="chip">Firebase</span>
         </div>
       </div>
     </div>
@@ -806,10 +788,10 @@ window.addEventListener('load', () => {
   }, { threshold:0.15 });
   revealEls.forEach(el => io.observe(el));
 
-  /* ---------- project slideshows (CartEye / MedFlow) ---------- */
+  /* ---------- project slideshows ---------- */
   document.querySelectorAll('[data-slideshow]').forEach(box => {
     const slides = [...box.querySelectorAll('.slide')];
-    if (slides.length <= 1) return; // single static image (e.g. Map Navigator) — nothing to rotate
+    if (slides.length <= 1) return;
 
     const dotsWrap = box.querySelector('.slideshow-dots');
     let current = 0;
@@ -841,7 +823,6 @@ window.addEventListener('load', () => {
       timer = setInterval(next, interval);
     }
 
-    /* only run once visible, so nothing burns cycles offscreen */
     const io = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting){ restart(); }
@@ -851,7 +832,7 @@ window.addEventListener('load', () => {
     io.observe(box);
   });
 
-  /* ---------- priorit video toggle (guarded — elements no longer in DOM) ---------- */
+  /* ---------- priorit video toggle (guarded) ---------- */
   const playBtn = document.getElementById('prioritPlay');
   const video = document.getElementById('prioritVideo');
   const mock = document.querySelector('.kanban-mock');
@@ -910,7 +891,7 @@ window.addEventListener('load', () => {
   /* ---------- ask-me chatbot (static Q&A, no API calls) ---------- */
   const QA = [
     { emoji:"🎓", q:"What's her education background?", a:"She's pursuing a B.E. in Information Science & Engineering at Global Academy of Technology, Bengaluru (Aug 2023 – Jul 2027), with a CGPA of 8.3/10." },
-    { emoji:"⚡", q:"What makes her different?", a:"She doesn't just complete assignments — she's shipped 3 internships, a freelance client project, and 3 self-driven builds (Priorit, CartEye, MedFlow), each solving a real problem end-to-end rather than following a tutorial.", feature:true },
+    { emoji:"⚡", q:"What makes her different?", a:"She doesn't just complete assignments — she's shipped 3 internships, a freelance client project, and self-driven builds like Priorit and CartEye, each solving a real problem end-to-end rather than following a tutorial.", feature:true },
     { emoji:"🧩", q:"What are her strengths and weaknesses?", a:"Strength: she picks up new stacks fast and ships full features solo, from auth to UI to deployment. She's candid that she's still building depth in large-scale system design — something she's actively growing into through her current internship." },
     { emoji:"🚀", q:"What's her favorite part of building?", a:"That moment a feature goes from idea to something a real user can click and see work — especially real-time stuff, like watching a task update sync instantly across two screens." }
   ];
